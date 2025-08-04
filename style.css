@@ -32,8 +32,7 @@
         font-family: 'Poppins', sans-serif;
         background-color: #f8f9fa;
         color: #222;
-        /* font-family: 'Nunito', sans-serif;
-        */
+       
     }
     section#home {
         height: 100vh;
@@ -58,7 +57,7 @@
 }
 
 #menu-icon.bx-x {
-  transform: rotate(180deg); /* Optional effect */
+  transform: rotate(180deg); 
 }
 
     
@@ -109,7 +108,7 @@
     transition: color 0.3s ease;
 }
 
-/* underline hover effect */
+/* underline effect */
 .nav-menu ul li a::after {
     content: "";
     position: absolute;
@@ -294,6 +293,8 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   margin-bottom: 16px;
   text-align: justify;
 }
+
+
 /* Courses Section */
 #courses {
   padding: 80px 20px;
@@ -324,7 +325,7 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   border-radius: 1rem;
 }
 
-/* Course Cards Container */
+
 .courseCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -333,7 +334,7 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   margin: 0 auto;
 }
 
-/* Individual Course Card */
+
 .course {
   background: #fff;
   border-radius: 16px;
@@ -354,7 +355,6 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   margin-bottom: 15px;
 }
 
-/* Placeholder styling — replace with real images */
 .courseImg {
   width: 100%;
   height: 45%;
@@ -364,7 +364,7 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   margin-bottom: 15px;
 }
 
-/* Course Info */
+
 .courseInfo {
   font-size: 1rem;
   color: #555;
@@ -387,6 +387,8 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   background-color: #005fcc;
   transform: translateY(-2px);
 }
+
+
 
 /* Highlights Section */
 #highlights {
@@ -429,7 +431,7 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
      
 }
 
-/* Individual Highlight Card */
+
 .highlight {
   background-color: #ffffff;
   border-radius: 16px;
@@ -448,17 +450,16 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   margin-bottom: 0.4rem;
 }
 
-/* Image Placeholder or Icons */
 .highlight-img {
   width: 50%;
   height: 370px;
-  background-color: #f1f1f1; /* temporary background for empty image */
+  background-color: #f1f1f1;
   border-radius: 2rem;
 
 
 }
 
-/* Highlight Info */
+
 .highlight-info {
   font-size: 1rem;
   line-height: 1.6;
@@ -466,6 +467,8 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   padding: 1rem 2rem;
   
 }
+
+
 
 /* Apply Now Section */
 .apply-section {
@@ -500,7 +503,6 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
  
 }
 
-/* Form Styling */
 .apply-form {
   max-width: 600px;
   margin: 0 auto;
@@ -534,7 +536,6 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   border-color: #0077ff;
 }
 
-/* Submit Button */
 .apply-btn {
   background-color: #0077ff;
   color: #fff;
@@ -550,7 +551,9 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
 .apply-btn:hover {
   background-color: #005fcc;
 }
-/* === Reviews Section Styling === */
+
+
+/* Reviews */
 #reviews {
   padding: 80px 20px;
   background: #fffacd;
@@ -575,16 +578,16 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
     transform: scale(1);
   }
   50% {
-    transform: scale(1.03); /* or 1.2 for stronger zoom */
+    transform: scale(1.03); 
   }
 }
 
 .reviews-container {
      
   max-width: 1000px;
-  display: flex;                /* aligns all cards in a row */
-  overflow-x: auto;             /* allows horizontal scroll if cards overflow */
-  gap: 2rem;                    /* space between cards */
+  display: flex;                
+  overflow-x: auto;             
+  gap: 2rem;                 
   padding: 2rem;
   height: 400px;
   background-color: #0077ff;
@@ -592,8 +595,8 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
 }
 
 .review {
-  width: 400px;             /* ensures horizontal overflow */
-  flex-shrink: 0;               /* prevents shrinking when container is small */
+  width: 400px;             
+  flex-shrink: 0;               
   background: #fff;
   padding: 2rem 2rem;
   border-radius: 20px;
@@ -922,7 +925,7 @@ section.visible{
 
 
 
-/*responsive design */
+/*mobile responsive */
 @media (max-width: 768px) { 
    .hamburger {
         display: block;
@@ -1027,7 +1030,7 @@ section.visible{
   }
 
   .courseCards {
-    grid-template-columns: 1fr; /* One card per row on mobile */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
@@ -1074,7 +1077,7 @@ section.visible{
   .highlight-2,
   .highlight-3,
   .highlight-4 {
-    flex-direction: column !important; /* Stack image and text vertically */
+    flex-direction: column !important; 
     margin: 1rem 0;
     gap: 1.5rem;
   }
@@ -1150,7 +1153,7 @@ section.visible{
   }
 
   .reviews-container {
-    flex-direction: row;     /* Keep horizontal scroll */
+    flex-direction: row;    
     padding: 1rem;
     gap: 1rem;
     height: auto;
@@ -1159,7 +1162,7 @@ section.visible{
   }
 
   .review {
-    width: 260px;             /* Smaller width for mobile */
+    width: 260px;             
     padding: 1.2rem;
     font-size: 0.85rem;
     border-radius: 15px;
@@ -1177,7 +1180,7 @@ section.visible{
     margin-bottom: 10px;
   }
   #location {
-    height: 100vh; /* Let content decide height on small screens */
+    height: 100vh;
     padding: 40px 10px;
   }
 
@@ -1189,12 +1192,12 @@ section.visible{
   }
 
   .learn-modes {
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column;
     gap: 2rem;
   }
 
   .learn {
-    width: 90%;              /* Take most of screen width */
+    width: 90%;             
     padding: 1.2rem;
   }
 

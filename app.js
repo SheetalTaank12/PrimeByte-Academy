@@ -48,18 +48,16 @@ const icon = document.getElementById('menu-icon');
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // ⛔ Prevents page reload or default submission
+  event.preventDefault(); 
   console.log("Form submitted, but not reloaded!");
   
-  // You can add form validation or send data with fetch/AJAX here
 });
 const applyform = document.getElementById('apply-form');
 
 applyform.addEventListener('submit', function(event) {
-  event.preventDefault(); // ⛔ Prevents page reload or default submission
+  event.preventDefault(); 
   console.log("Form submitted, but not reloaded!");
   
-  // You can add form validation or send data with fetch/AJAX here
 });
 
 
@@ -73,7 +71,7 @@ const observer = new IntersectionObserver((entries,observer)=>{
         if(entry.isIntersecting){
             entry.target.classList.add('visible');
 
-            // Animate all headings inside it
+            // all headings inside it
       const headings = entry.target.querySelectorAll('.show-heading');
       headings.forEach(h => h.classList.add('show'));
 
@@ -81,7 +79,7 @@ const observer = new IntersectionObserver((entries,observer)=>{
         }
     });
 }, {
-  threshold: 0.05 // means 5% of the element must be visible
+  threshold: 0.05 // means 5% of element must be visible
 });
 document.querySelectorAll('section').forEach(section=>{
     observer.observe(section);
@@ -124,7 +122,6 @@ if (aboutImg) {
 
 
 
-// Observer for .course cards (to trigger individually with delay)
 const courseCards = document.querySelectorAll('.course');
 
 courseCards.forEach((card, index) => {
@@ -134,7 +131,7 @@ courseCards.forEach((card, index) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
-        observer.unobserve(entry.target); // Remove observer once shown
+        observer.unobserve(entry.target);
       }
     });
   }, {
