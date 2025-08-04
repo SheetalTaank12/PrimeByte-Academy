@@ -302,6 +302,7 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   text-align: center;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 
+  flex-direction: column;
   
 }
 
