@@ -81,7 +81,7 @@ const observer = new IntersectionObserver((entries,observer)=>{
         }
     });
 }, {
-  threshold: 0.1 // means 10% of the element must be visible
+  threshold: 0.05 // means 5% of the element must be visible
 });
 document.querySelectorAll('section').forEach(section=>{
     observer.observe(section);
@@ -96,7 +96,7 @@ const aboutContentObserver = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  threshold: 0.3
+  threshold: 0.1
 });
 
 const aboutContent = document.querySelector('.about-content');
@@ -113,7 +113,7 @@ const aboutImgObserver = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  threshold: 0.3
+  threshold: 0.1
 });
 
 const aboutImg = document.querySelector('.about-img img');
@@ -138,7 +138,7 @@ courseCards.forEach((card, index) => {
       }
     });
   }, {
-    threshold: 0.3
+    threshold: 0.05
   });
 
   cardObserver.observe(card);
@@ -154,7 +154,7 @@ const highlightObserver = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  threshold: 0.3
+  threshold: 0.08
 });
 
 document.querySelectorAll('.highlight').forEach(highlight=>{
@@ -171,7 +171,7 @@ const highlightImgObserver = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  threshold: 0.3
+  threshold: 0.08
 });
 
 document.querySelectorAll('.highlight-img').forEach(img=>{
@@ -189,7 +189,7 @@ const applyformObserver = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  threshold: 0.3
+  threshold: 0.1
 });
 
 const applyForm = document.querySelector('.apply-form');
