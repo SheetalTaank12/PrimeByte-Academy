@@ -73,6 +73,8 @@
 </section>
 
         <section id="courses">
+                    <div id="particles-courses"></div>
+
             <h2 class="explorecourses show-heading">Explore Courses</h2>
             <div class="courseCards">
                 <div class="course">
@@ -378,6 +380,72 @@ Education shouldn't be a luxury, and here, it's not.
 </html>
 
 <script>
+
+  
+    particlesJS('particles-courses', {
+    particles: {
+      number: {
+        value: 60,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: "#007bff"
+      },
+      shape: {
+       type:"polygon",
+         polygon: {
+        nb_sides: 4 // triangle
+      }
+      },
+      opacity: {
+        value: 0.6,
+        random: true
+      },
+      size: {
+        value: 8,
+        random: true
+      },
+      line_linked: {
+        enable: true,
+        color: "#00ffff"
+      },
+      move: {
+        enable: true,
+        speed: 3,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "bubble"
+        },
+        onclick: {
+          enable: false
+        }
+      },
+      modes: {
+        bubble: {
+          distance: 200,
+          size: 12,
+          duration: 2,
+          opacity: 0.8,
+          speed: 3
+        }
+      }
+    },
+    retina_detect: true
+  });
+
+
   particlesJS('particles-about', {
     particles: {
       number: {

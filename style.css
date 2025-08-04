@@ -121,6 +121,7 @@
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
+    
 }
 
 .nav-menu ul li a:hover {
@@ -132,19 +133,17 @@
 }
     #home {
   padding: 100px 20px;
-  /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
+background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  background-image: url("images/home-background.jpg");
-  width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+ 
 }
+
 .home-content{
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1.5rem;
     border-radius: 1rem;
+    z-index: 2;
 }
 
 .home-content h1 {
@@ -301,14 +300,19 @@
   background: #f9fbfd;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  background-image: url("images/course-bg.jpg");
-  width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+
   
 }
 
+#particles-courses{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+ ;}
 .explorecourses {
   font-size: 2.5rem;
   font-weight: 700;
