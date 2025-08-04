@@ -36,10 +36,13 @@ document.getElementById("back-to-top").addEventListener("click", function () {
   });
 
 const hamburger = document.getElementById('hamburger');
+const icon = document.getElementById('menu-icon');
     const navMenu = document.getElementById('nav-menu');
 
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+        icon.classList.toggle('bx-menu');
+         icon.classList.toggle('bx-x'); // Cross icon
     });
 
 const form = document.getElementById('contact-form');
@@ -78,7 +81,7 @@ const observer = new IntersectionObserver((entries,observer)=>{
         }
     });
 }, {
-  threshold: 0.2 // means 30% of the element must be visible
+  threshold: 0.1 // means 10% of the element must be visible
 });
 document.querySelectorAll('section').forEach(section=>{
     observer.observe(section);
