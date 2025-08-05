@@ -767,7 +767,7 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 .contact-opt{
   display: flex;
@@ -775,16 +775,16 @@ background: linear-gradient(135deg, #cdd6e6, #7d8bb1);
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding: 2rem;
+  padding: 1.3rem;
   border-radius: 1.5rem;
-  width: 420px;
+  width: 350px;
 }
 .contact-opt .contact-icon{
   font-size: 4.5rem;
   color: #007bff;
 }
 .contact-opt .name{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #0a1172;
 }
 .footer {
@@ -1257,14 +1257,14 @@ section.visible{
 
   .contact-options {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.6rem;
     width: 100%;
     align-items: center;
   }
 
   .contact-opt {
     width: 80%;
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .contact-opt .contact-icon {
@@ -1272,7 +1272,7 @@ section.visible{
   }
 
   .contact-opt .name {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     margin-top: 0.5rem;
   }
